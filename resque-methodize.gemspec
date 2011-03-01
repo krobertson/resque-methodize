@@ -2,7 +2,7 @@ $LOAD_PATH.unshift 'lib'
 
 Gem::Specification.new do |s|
   s.name              = 'resque-methodize'
-  s.version           = File.read('VERSION')
+  s.version           = File.read('VERSION').chomp
   s.date              = Time.now.strftime('%Y-%m-%d')
   s.summary           = 'A Resque plugin that allows you to call individual methods on a Resque job'
   s.homepage          = 'http://github.com/krobertson/resque-methodize'

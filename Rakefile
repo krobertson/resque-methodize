@@ -1,6 +1,6 @@
 desc "Push a new version to Gemcutter"
 task :publish do
-  VERSION = File.read('VERSION')
+  VERSION = File.read('VERSION').chomp
 
   sh "gem build resque-methodize.gemspec"
   sh "gem push resque-methodize-#{VERSION}.gem"

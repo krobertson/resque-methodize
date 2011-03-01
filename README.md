@@ -8,7 +8,7 @@ For example:
     require 'resque/plugins/methodize'
     
     class MyJob
-      extend Resque::Plugins::Priority
+      extend Resque::Plugins::Methodize
       @queue = :jobs
       
       def sample1

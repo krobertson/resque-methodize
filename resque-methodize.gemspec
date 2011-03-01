@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files  = [ "LICENSE", "README.md" ]
   s.rdoc_options      = ["--charset=UTF-8"]
 
-  s.add_dependency "redis", ">= 0.0.0"
+  s.add_dependency "resque", ">= 0.0.0"
 
   s.description = <<description
     Resque-Methodize is a plugin for the Resque job library that allows
